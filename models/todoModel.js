@@ -19,7 +19,7 @@ async function getAll(){
 }
 
 async function deleteTask(id){
-  const deleted = await db('todo').delete({id})
+  const deleted = await db('todo').where({id}).del()
 
   return deleted
 }

@@ -32,7 +32,7 @@ describe('todo Model', () => {
       expect(newTask).toEqual([2])
 
       const removeTask = await todo.deleteTask(2)
-      expect(removeTask).toBe(2)
+      expect(removeTask).toBe(1)
     })
   })
   
